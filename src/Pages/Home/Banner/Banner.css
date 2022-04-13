@@ -1,0 +1,16 @@
+.banner {
+    /* background-image: url(../../../images/ban1.jpg);
+    background-repeat: no-repeat; */
+    /* background-image: linear-gradient(rgba(114, 44, 183, 0.359), rgba(135, 139, 135, 0.523)); */
+    background-size: cover;
+    height: auto;
+    padding: auto;
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner img {
+    height: 450px;
+}

@@ -1,0 +1,75 @@
+.products {
+    background-image: url(../../../Images/b4.jpg);
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(rgba(114, 44, 183, 0.359), rgba(135, 139, 135, 0.523)); */
+    background-size: cover;
+    height: auto;
+    /* padding: auto; */
+    width: 100%;
+    padding-bottom: 30px;
+
+}
+
+.search-container {
+    background-color: rgba(0, 0, 0, 0.832);
+    text-align: center;
+    line-height: 40px;
+}
+
+.search-container input {
+    width: 50%;
+}
+
+.caked {
+    background-color: rgba(119, 207, 119, 0.615);
+    shape-outside: margin-box;
+
+}
+
+.pagination {
+
+    display: flex;
+    list-style: none;
+    outline: none;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.pagination>.active>a {
+    background-color: #47ccde;
+    border-color: #47ccde;
+    color: #fff;
+}
+
+.pagination>li>a {
+    text-decoration: none;
+    border: 1px solid #63daea;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+    background-color: #47ccde;
+    border-color: #47ccde;
+    outline: none;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: #47ccde
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span,
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border-radius: unset
+}
