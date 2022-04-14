@@ -34,7 +34,7 @@ const Shipping = () => {
 
     const onSubmit = data => {
 
-        axios.post('https://fierce-escarpment-93712.herokuapp.com/enroll', data)
+        axios.post('https://blooming-garden-01472.herokuapp.com/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added successfully');

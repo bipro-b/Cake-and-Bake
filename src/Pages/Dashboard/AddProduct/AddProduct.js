@@ -8,7 +8,7 @@ const AddProduct = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/products', data)
+        axios.post('https://blooming-garden-01472.herokuapp.com/products', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added successfullt');

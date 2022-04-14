@@ -38,9 +38,10 @@ import MyOrder from '../MyOrder/MyOrder';
 import AddProduct from '../AddProduct/AddProduct';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageProduct from '../ManageProduct/ManageProduct';
-import ManageAllOrder from '../ManageAllOrder/ManageAllOrder';
+// import ManageAllOrder from '../ManageAllOrder/ManageAllOrder';
 import GiveReview from '../GiveReview/GiveReview';
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
+import ManageOrder from '../ManageOrder/ManageOrder';
 
 const drawerWidth = 200;
 
@@ -60,7 +61,7 @@ function Dashboard(props) {
             <Divider />
             <Link style={{ textDecoration: 'none' }} to="/dashboard"> <Button color="inherit">Dashboard</Button></Link> <br />
             <Box sx={{ textAlign: 'left' }}>
-                <Link style={{ textDecoration: 'none' }} to="/more"> <Button color="inherit">Products</Button></Link> <br />
+                <Link style={{ textDecoration: 'none' }} to="/home"> <Button color="inherit">Products</Button></Link> <br />
 
 
                 {admin || <Box>
@@ -77,7 +78,7 @@ function Dashboard(props) {
             {admin && <Box sx={{ textAlign: 'left' }}>
                 <Link style={{ textDecoration: 'none' }} to="makeAdmin"> <Button color="inherit">Make Admin</Button></Link><br />
                 <Link style={{ textDecoration: 'none' }} to={`/dashboard/manageallorder`}> <Button color="inherit">Manage Order</Button></Link><br />
-                <Link style={{ textDecoration: 'none' }} to={`/dashboard/manageproduct`}> <Button color="inherit">Manage Courses</Button></Link><br />
+                <Link style={{ textDecoration: 'none' }} to={`/dashboard/manageproduct`}> <Button color="inherit">Manage Products</Button></Link><br />
                 <Link style={{ textDecoration: 'none' }} to={`/dashboard/addproduct`}> <Button color="inherit">Add Product</Button></Link> <br />
                 <Button onClick={logout} sx={{ color: 'white' }}>Logout</Button>
             </Box>}
@@ -173,8 +174,8 @@ function Dashboard(props) {
 
                     <Route path="manageproduct" element={<ManageProduct />} />
 
-                    <Route path="manageallorder" element={<ManageAllOrder />} />
-                    {/* <Route path="/" element={<Show />} /> */}
+                    <Route path="manageallorder" element={<ManageOrder />} />
+
 
                 </Routes>
 

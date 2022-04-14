@@ -27,7 +27,7 @@ const Services = () => {
     // }, [])
 
     const getData = async () => {
-        const res = await axios.get('http://localhost:5000/products')
+        const res = await axios.get('https://blooming-garden-01472.herokuapp.com/products')
         const data = res.data;
         const slice = data.slice(offset, offset + perPage)
         const postData = slice.map(pd => <div key={pd.id}>

@@ -11,7 +11,8 @@ import Products from "./Pages/Home/Products/Products";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Login/Register";
 import Shipping from "./Pages/Shipping/Shipping";
-
+import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute"
+import About from "./Pages/About/About";
 function App() {
   return (
     <div className="App">
@@ -21,8 +22,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="home" element={<Home />} />
             <Route path="/products" element={<Products />} />
-
-            <Route path="/cake/:cakeId" element={<Shipping />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/cake/:cakeId" element={<PrivateRoute><Shipping /></PrivateRoute>} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="dashboard/*" element={<Dashboard />} />
