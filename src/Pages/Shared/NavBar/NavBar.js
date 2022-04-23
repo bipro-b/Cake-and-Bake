@@ -32,7 +32,7 @@ const NavBar = () => {
 
                         </Nav>
 
-                        {/* {user.email && <NavLink to="/dashboard" activeStyle={activeStyle}>Dashboard</NavLink>} */}
+                        {user.email && <NavLink to="/dashboard" activeStyle={activeStyle}>Dashboard</NavLink>}
 
                         {user.email && <span style={{ color: 'white' }}>  {user.displayName}  </span>}
                         {
